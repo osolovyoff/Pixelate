@@ -1,5 +1,11 @@
-#Files
+# Folders
+.vs/
+Binaries/
+Build/
+Intermediate/
+Saved/
 
-#Folders
-_bin/
-_build/
+# Files
+*.VC.db
+*.VC.opendb
+*.sln
