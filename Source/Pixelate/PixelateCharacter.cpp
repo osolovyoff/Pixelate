@@ -60,18 +60,18 @@ void APixelateCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
     PlayerInputComponent->BindAxis(MoveRightBinding);
 }
 
-// Called when the game starts or when spawned
-void APixelateCharacter::BeginPlay()
-{
-	Super::BeginPlay();
-}
-
-// Called every frame
-void APixelateCharacter::Tick(float DeltaTime)
-{
-    Super::Tick(DeltaTime);
-    Slide(DeltaTime);
-}
+//// Called when the game starts or when spawned
+//void APixelateCharacter::BeginPlay()
+//{
+//	Super::BeginPlay();
+//}
+//
+//// Called every frame
+//void APixelateCharacter::Tick(float DeltaTime)
+//{
+//    Super::Tick(DeltaTime);
+//    Slide(DeltaTime);
+//}
 
 void APixelateCharacter::FireShot()
 {
