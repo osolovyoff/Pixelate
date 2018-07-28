@@ -71,7 +71,6 @@ void APixelateCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
     Slide(DeltaTime);
-    
 }
 
 void APixelateCharacter::FireShot()
@@ -97,23 +96,23 @@ bool APixelateCharacter::Syncronization_Validate()
 
 void APixelateCharacter::Slide(float DeltaSeconds)
 {
-    const float Forward = GetInputAxisValue(MoveForwardBinding);
-    const float RotationAngle = GetInputAxisValue(MoveRightBinding);
-    if (RotationAngle)
-    {
-        const FRotator rotation(0.f, 0.f, 60 * DeltaSeconds*25.f);
-        Controller->SetControlRotation(rotation);
-        //AddMovementInput()
-        //RootComponent->SetWorldRotation(RootComponent->RelativeRotation.Quaternion() * FQuat::MakeFromEuler(FVector(0.f, 0.0f, 60 * DeltaSeconds*25.f) * RotationAngle));
-    }
+    //const float Forward = GetInputAxisValue(MoveForwardBinding);
+    //const float RotationAngle = GetInputAxisValue(MoveRightBinding);
+    //if (RotationAngle)
+    //{
+    //    const FRotator rotation(0.f, 0.f, 60 * DeltaSeconds*25.f);
+    //    Controller->SetControlRotation(rotation);
+    //    //AddMovementInput()
+    //    //RootComponent->SetWorldRotation(RootComponent->RelativeRotation.Quaternion() * FQuat::MakeFromEuler(FVector(0.f, 0.0f, 60 * DeltaSeconds*25.f) * RotationAngle));
+    //}
 
-    const float MaxVelocityMagnitude = 100.0f;
-    if (Forward != 0.0f)
-    {
-        const float EnginePower = 1000.0f;
-        const FVector ForwardVector = GetActorForwardVector();
-        const FVector Direction = ForwardVector * EnginePower * Forward;
-        AddMovementInput(Direction, EnginePower);
-        //ShipMeshComponent->AddForce(ForwardVector * EnginePower * Forward, NAME_None, true);
-    }
+    //const float MaxVelocityMagnitude = 100.0f;
+    //if (Forward != 0.0f)
+    //{
+    //    const float EnginePower = 1000.0f;
+    //    const FVector ForwardVector = GetActorForwardVector();
+    //    const FVector Direction = ForwardVector * EnginePower * Forward;
+    //    AddMovementInput(Direction, EnginePower);
+    //    //ShipMeshComponent->AddForce(ForwardVector * EnginePower * Forward, NAME_None, true);
+    //}
 }

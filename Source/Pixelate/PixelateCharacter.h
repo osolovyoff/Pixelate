@@ -72,7 +72,7 @@ private:
     uint32 bCanFire : 1;
 	
 private:
-    void Slide(float DeltaSeconds);
+    virtual void Slide(float DeltaSeconds);
 
 public:
     /** Returns ShipMeshComponent subobject **/
