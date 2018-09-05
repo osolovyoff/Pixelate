@@ -2,6 +2,7 @@
 
 #include "PixelateController.h"
 
+APixelateController::APixelateController()
+{
 
-
-
+}

@@ -13,6 +13,9 @@ UCLASS()
 class PIXELATE_API APixelateController : public APlayerController
 {
 	GENERATED_BODY()
+
+public:
+    APixelateController();
 	
 	
 	
